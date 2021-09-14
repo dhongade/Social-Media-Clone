@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GOSSIP!</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+
+   <style media="screen">
+
+   /* .btn {
+     background-color: #2196f3;
+     display: inline-block;
+     font-size: 35px;
+     padding: 3px 10px;
+    }
+
+    .btn-warning{
+      border-color: black;
+    } */
+     .navbar{
+       background-color: #3b5163;
+     }
+
+     .btn {
+       background: #black;
+       background-image: -webkit-linear-gradient(top, #34d9d9, #2b8bb8);
+       background-image: -moz-linear-gradient(top, #34d9d9, #2b8bb8);
+       background-image: -ms-linear-gradient(top, #34d9d9, #2b8bb8);
+       background-image: -o-linear-gradient(top, #34d9d9, #2b8bb8);
+       background-image: linear-gradient(to bottom, #34d9d9, #2b8bb8);
+       -webkit-border-radius: 30;
+       -moz-border-radius: 30;
+       border-radius: 30px;
+       text-shadow: 4px 1px 4px #666666;
+       -webkit-box-shadow: 0px 1px 3px #666666;
+       -moz-box-shadow: 0px 1px 3px #666666;
+       box-shadow: 0px 1px 3px #666666;
+       font-family: Arial;
+       color: #ffffff;
+       font-size: 20px;
+       padding: 10px 25px 10px 25px;
+       border: solid #1f888c 0px;
+       text-decoration: none;
+     }
+/*
+.btn:hover {
+  background: #3cd4fa;
+  background-image: -webkit-linear-gradient(top, #3cd4fa, #b034d9);
+  background-image: -moz-linear-gradient(top, #3cd4fa, #b034d9);
+  background-image: -ms-linear-gradient(top, #3cd4fa, #b034d9);
+  background-image: -o-linear-gradient(top, #3cd4fa, #b034d9);
+  background-image: linear-gradient(to bottom, #3cd4fa, #b034d9);
+  text-decoration: none;
+} */
+
+      .btn:hover{
+       background-color: #03e9f4;
+       box-shadow: 0 0 5px #03e9f4,
+                   0 0 25px #03e9f4,
+                   0 0 50px #03e9f4,
+                   0 0 200px #03e9f4;
+     }
+
+      h1{
+       font-size: 100px;
+       color: black;
+       font-weight: bold;
+       margin-top: 0px;
+       margin-bottom: 52px;
+       background-image: linear-gradient(to right,white 50%,#ff512f 50%, #dd2476);
+       background-size: 200%;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       transition: 0.5s ease-out;
+     }
+
+     h1:hover{
+       background-position: -100%;
+     }
+
+     a{
+       color: white;
+     }
+
+     a:hover{
+       text-decoration: none;
+     }
+     body{
+       font-family: 'Ubuntu', sans-serif;
+       background-image: linear-gradient(-45deg,#f70f1a,
+     #f53158
+     ,#23A6D5,#23D5AB);
+       background-size: 400% 400%;
+       animation: change 10s ease-in-out infinite;
+     }
+
+     .list-group-item{
+       background-color: #56b9d0;
+       border: 1px solid #0caef5;
+     }
+
+     h3{
+       font-size: 32px;
+       font-weight: bold;
+     }
+
+     h2{
+       font-size: 32px;
+       font-weight: bold;
+     }
+
+     .help-block {
+       color: #040404;
+     }
+
+     .container {
+    padding-bottom: 5px;
+    text-align: center;
+    }
+
+     p{
+       font-size: 20px;
+       color: white;
+     }
+
+     .badge{
+        background-color: #5beab2;
+     }
+
+     label {
+       display: inline-block;
+       max-width: 100%;
+       margin-bottom: 5px;
+       font-weight: 700;
+       font-size: 30px;
+      }
+
+      .navbar-brand {
+        float: left;
+        height: 50px;
+        padding: 15px 15px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: sans-serif;
+        line-height: 20px;
+        }
+
+        .navbar-brand:hover {
+            color: hotpink;
+          }
+
+
+     #home{
+       display: flex;
+       flex-direction:column;
+       padding: 3px 200px;
+       justify-content: center;
+       align-items: center;
+       height: 666px;
+     }
+
+
+@keyframes change{
+  0%{
+    background-position: 0 50%;
+  }
+
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+
+
+   </style>
+  </head>
+  <body>
+     <nav class='navbar mynav' role="navigation" id="navbar">
+      <div class="container">
+        <a class="navbar-brand mynav" href="{% url 'home' %}">Gossip</a>
+      <ul class="nav navbar-nav navbar-right">
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'posts:create' %}">POST</a></li>
+        <li><a href="{% url 'groups:all' %}">GROUPS</a></li>
+        <li><a href="{% url 'groups:create' %}">CREATE GROUP</a></li>
+        <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
+        {% else %}
+        <li><a href="{% url 'groups:all' %}">GROUPS</a></li>
+        <li><a href="{% url 'accounts:login'%}">LOG IN</a></li>
+        <li><a href="{% url 'accounts:signup'%}">SIGN UP</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+
+    <div class="container mycontent">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
